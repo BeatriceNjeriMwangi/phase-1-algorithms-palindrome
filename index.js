@@ -1,6 +1,15 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  const splitted=word.split("")
+  let unshifted=[];
+  splitted.forEach(char=>{
+    unshifted.unshift(char)
+  })
+  return unshifted.join("")===word?true:false
+
 }
+
+
 
 /* 
   Add your pseudocode here
